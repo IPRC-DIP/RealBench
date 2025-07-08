@@ -1,0 +1,96 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="第 1 页" id="vofEi66SDXjeaNPHCve3">
+    <mxGraphModel dx="863" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="waYciKXc8ACTUHjtJm-a-1" value="Mux" style="shadow=0;dashed=0;align=center;html=1;strokeWidth=1;shape=mxgraph.electrical.abstract.mux2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="285" y="90" width="80" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-2" value="RST_PAD_I" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="280" y="238" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-3" value="debounce" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="157" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-4" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="180" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-5" value="Mux" style="shadow=0;dashed=0;align=center;html=1;strokeWidth=1;shape=mxgraph.electrical.abstract.mux2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="190" y="72" width="80" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=0.135;entryY=0.246;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="waYciKXc8ACTUHjtJm-a-5" target="waYciKXc8ACTUHjtJm-a-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-8" value="!card_detect" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="187" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-9" value="debounce+1&#39;b1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry y="160" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-10" value="Mux" style="shadow=0;dashed=0;align=center;html=1;strokeWidth=1;shape=mxgraph.electrical.abstract.mux2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="98" y="98" width="80" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=0.096;entryY=0.685;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="176" y="152" as="sourcePoint" />
+            <mxPoint x="198.67999999999984" y="152.82999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-12" value="debounce!=4&#39;b1111" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="216" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-13" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="165" y="88" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-14" value="debounce" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="28" y="110" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-15" value="Mux" style="shadow=0;dashed=0;align=center;html=1;strokeWidth=1;shape=mxgraph.electrical.abstract.mux2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="651" y="85" width="80" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-16" value="RST_PAD_I" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="646" y="233" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-17" value="card_present" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="716" y="145" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-18" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="629" y="175" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-21" value="Mux" style="shadow=0;dashed=0;align=center;html=1;strokeWidth=1;shape=mxgraph.electrical.abstract.mux2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="557" y="67" width="80" height="118" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=0.135;entryY=0.246;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="waYciKXc8ACTUHjtJm-a-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="663" y="122" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-23" value="card_detect" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="537" y="182" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=-5;exitPerimeter=0;entryX=0.096;entryY=0.685;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="543" y="147" as="sourcePoint" />
+            <mxPoint x="565.6799999999998" y="147.82999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-26" value="Mux" style="shadow=0;dashed=0;align=center;html=1;strokeWidth=1;shape=mxgraph.electrical.abstract.mux2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="466" y="104" width="80" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-27" value="debounce==4&#39;b1111" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-28" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="152" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-29" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="111" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="waYciKXc8ACTUHjtJm-a-30" value="card_present" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="481" y="67" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

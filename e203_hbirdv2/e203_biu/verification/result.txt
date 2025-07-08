@@ -1,0 +1,110 @@
+
+-- ALL ---------------------
+make compile
+make[1]: Entering directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification'
+
+-- COMPILE ----------------
+verilator -cc --exe --binary --trace --assert --coverage-line -fno-table -Wno-SIDEEFFECT -Wno-CASEOVERLAP -Wno-LATCH -Wno-UNOPTFLAT -Wno-MULTIDRIVEN -Wno-ASCRANGE -Wno-COMBDLY -Wno-IMPLICIT -Wno-CASEINCOMPLETE -Wno-PINMISSING -Wno-WIDTHTRUNC -Wno-TIMESCALEMOD -Wno-INITIALDLY -Wno-EOFNEWLINE -Wno-DECLFILENAME -Wno-WIDTHEXPAND -j 4 --timing -fno-table --top tb -I../../config -I../../e203_defines *v
+make[2]: Entering directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification/obj_dir'
+/home/doooboooh/Software/miniconda3/envs/veribench/bin/x86_64-conda-linux-gnu-c++ -Os  -I.  -MMD -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/verilated.cpp
+/home/doooboooh/Software/miniconda3/envs/veribench/bin/x86_64-conda-linux-gnu-c++ -Os  -I.  -MMD -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_cov.o /home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/verilated_cov.cpp
+/home/doooboooh/Software/miniconda3/envs/veribench/bin/x86_64-conda-linux-gnu-c++ -Os  -I.  -MMD -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/verilated_vcd_c.cpp
+/home/doooboooh/Software/miniconda3/envs/veribench/bin/x86_64-conda-linux-gnu-c++ -Os  -I.  -MMD -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/verilated_timing.cpp
+/home/doooboooh/Software/miniconda3/envs/veribench/bin/x86_64-conda-linux-gnu-c++ -Os  -I.  -MMD -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/verilated_threads.cpp
+python3 /home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtb.cpp Vtb___024root__DepSet_hfe20aad3__0.cpp Vtb___024root__DepSet_ha183790c__0.cpp Vtb__main.cpp Vtb__Trace__0.cpp Vtb__ConstPool_0.cpp Vtb___024root__Slow.cpp Vtb___024root__DepSet_hfe20aad3__0__Slow.cpp Vtb___024root__DepSet_ha183790c__0__Slow.cpp Vtb__Syms.cpp Vtb__Trace__0__Slow.cpp Vtb__TraceDecls__0__Slow.cpp > Vtb__ALL.cpp
+echo "" > Vtb__ALL.verilator_deplist.tmp
+/home/doooboooh/Software/miniconda3/envs/veribench/bin/x86_64-conda-linux-gnu-c++ -Os  -I.  -MMD -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include -I/home/doooboooh/Software/miniconda3/envs/veribench/share/verilator/include/vltstd -DVM_COVERAGE=1 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o Vtb__ALL.o Vtb__ALL.cpp
+/home/doooboooh/Software/miniconda3/envs/veribench/bin/x86_64-conda-linux-gnu-c++    verilated.o verilated_cov.o verilated_vcd_c.o verilated_timing.o verilated_threads.o Vtb__ALL.a    -pthread -lpthread -latomic   -o Vtb
+rm Vtb__ALL.verilator_deplist.tmp
+make[2]: Leaving directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification/obj_dir'
+- V e r i l a t i o n   R e p o r t: Verilator 5.030 2024-10-27 rev conda-forge build 0
+- Verilator: Built from 1.436 MB sources in 30 modules, into 1.296 MB in 12 C++ files needing 0.000 MB
+- Verilator: Walltime 8.747 s (elab=0.024, cvt=0.099, bld=8.450); cpu 0.321 s on 4 threads; alloced 30.012 MB
+make[1]: Leaving directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification'
+make run
+make[1]: Entering directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification'
+
+-- RUN ---------------------
+obj_dir/Vtb
+- e203_biu_stimulus_gen.sv:311: Verilog $finish
+Hint: Output 'biu_active' has no mismatches.
+Hint: Output 'lsu2biu_icb_cmd_ready' has no mismatches.
+Hint: Output 'lsu2biu_icb_rsp_valid' has no mismatches.
+Hint: Output 'lsu2biu_icb_rsp_err' has no mismatches.
+Hint: Output 'lsu2biu_icb_rsp_excl_ok' has no mismatches.
+Hint: Output 'lsu2biu_icb_rsp_rdata' has no mismatches.
+Hint: Output 'ifu2biu_icb_cmd_ready' has no mismatches.
+Hint: Output 'ifu2biu_icb_rsp_valid' has no mismatches.
+Hint: Output 'ifu2biu_icb_rsp_err' has no mismatches.
+Hint: Output 'ifu2biu_icb_rsp_excl_ok' has no mismatches.
+Hint: Output 'ifu2biu_icb_rsp_rdata' has no mismatches.
+Hint: Output 'ppi_icb_cmd_valid' has no mismatches.
+Hint: Output 'ppi_icb_cmd_addr' has no mismatches.
+Hint: Output 'ppi_icb_cmd_read' has no mismatches.
+Hint: Output 'ppi_icb_cmd_wdata' has no mismatches.
+Hint: Output 'ppi_icb_cmd_wmask' has no mismatches.
+Hint: Output 'ppi_icb_cmd_burst' has no mismatches.
+Hint: Output 'ppi_icb_cmd_beat' has no mismatches.
+Hint: Output 'ppi_icb_cmd_lock' has no mismatches.
+Hint: Output 'ppi_icb_cmd_excl' has no mismatches.
+Hint: Output 'ppi_icb_cmd_size' has no mismatches.
+Hint: Output 'ppi_icb_rsp_ready' has no mismatches.
+Hint: Output 'clint_icb_cmd_valid' has no mismatches.
+Hint: Output 'clint_icb_cmd_addr' has no mismatches.
+Hint: Output 'clint_icb_cmd_read' has no mismatches.
+Hint: Output 'clint_icb_cmd_wdata' has no mismatches.
+Hint: Output 'clint_icb_cmd_wmask' has no mismatches.
+Hint: Output 'clint_icb_cmd_burst' has no mismatches.
+Hint: Output 'clint_icb_cmd_beat' has no mismatches.
+Hint: Output 'clint_icb_cmd_lock' has no mismatches.
+Hint: Output 'clint_icb_cmd_excl' has no mismatches.
+Hint: Output 'clint_icb_cmd_size' has no mismatches.
+Hint: Output 'clint_icb_rsp_ready' has no mismatches.
+Hint: Output 'plic_icb_cmd_valid' has no mismatches.
+Hint: Output 'plic_icb_cmd_addr' has no mismatches.
+Hint: Output 'plic_icb_cmd_read' has no mismatches.
+Hint: Output 'plic_icb_cmd_wdata' has no mismatches.
+Hint: Output 'plic_icb_cmd_wmask' has no mismatches.
+Hint: Output 'plic_icb_cmd_burst' has no mismatches.
+Hint: Output 'plic_icb_cmd_beat' has no mismatches.
+Hint: Output 'plic_icb_cmd_lock' has no mismatches.
+Hint: Output 'plic_icb_cmd_excl' has no mismatches.
+Hint: Output 'plic_icb_cmd_size' has no mismatches.
+Hint: Output 'plic_icb_rsp_ready' has no mismatches.
+Hint: Output 'fio_icb_cmd_valid' has no mismatches.
+Hint: Output 'fio_icb_cmd_addr' has no mismatches.
+Hint: Output 'fio_icb_cmd_read' has no mismatches.
+Hint: Output 'fio_icb_cmd_wdata' has no mismatches.
+Hint: Output 'fio_icb_cmd_wmask' has no mismatches.
+Hint: Output 'fio_icb_cmd_burst' has no mismatches.
+Hint: Output 'fio_icb_cmd_beat' has no mismatches.
+Hint: Output 'fio_icb_cmd_lock' has no mismatches.
+Hint: Output 'fio_icb_cmd_excl' has no mismatches.
+Hint: Output 'fio_icb_cmd_size' has no mismatches.
+Hint: Output 'fio_icb_rsp_ready' has no mismatches.
+Hint: Output 'mem_icb_cmd_valid' has no mismatches.
+Hint: Output 'mem_icb_cmd_addr' has no mismatches.
+Hint: Output 'mem_icb_cmd_read' has no mismatches.
+Hint: Output 'mem_icb_cmd_wdata' has no mismatches.
+Hint: Output 'mem_icb_cmd_wmask' has no mismatches.
+Hint: Output 'mem_icb_cmd_burst' has no mismatches.
+Hint: Output 'mem_icb_cmd_beat' has no mismatches.
+Hint: Output 'mem_icb_cmd_lock' has no mismatches.
+Hint: Output 'mem_icb_cmd_excl' has no mismatches.
+Hint: Output 'mem_icb_cmd_size' has no mismatches.
+Hint: Output 'mem_icb_rsp_ready' has no mismatches.
+Hint: Total mismatched samples is 0 out of 222 samples
+
+Simulation finished at 2216 ps
+- S i m u l a t i o n   R e p o r t: Verilator 5.030 2024-10-27
+- Verilator: $finish at 2ns; walltime 0.008 s; speed 262.985 ns/s
+- Verilator: cpu 0.008 s on 1 threads; alloced 121 MB
+make[1]: Leaving directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification'
+make analyze
+make[1]: Entering directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification'
+
+-- COVERAGE ----------------
+verilator_coverage logs/coverage.dat --annotate-all --annotate ./logs
+Total coverage (90/757) 11.00%
+See lines with '%00' in ./logs
+make[1]: Leaving directory '/home/doooboooh/Projects/Bench4RealVerilogGen/e203_hbirdv2/e203_biu/verification'

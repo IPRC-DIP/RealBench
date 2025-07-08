@@ -1,0 +1,14 @@
+name: realbench
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - gcc=14.3
+  - verilator=5.030
+  - yosys=0.55
+  - binutils
+  - pip
+  - pip:
+      - joblib
+      - tqdm

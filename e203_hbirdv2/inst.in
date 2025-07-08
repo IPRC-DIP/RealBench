@@ -1,0 +1,26 @@
+  e203_dtcm_ram u_e203_dtcm_ram (
+    .sd   (dtcm_ram_sd),
+    .ds   (dtcm_ram_ds),
+    .ls   (dtcm_ram_ls),
+  
+    .cs   (dtcm_ram_cs   ),
+    .we   (dtcm_ram_we   ),
+    .addr (dtcm_ram_addr ),
+    .wem  (dtcm_ram_wem  ),
+    .din  (dtcm_ram_din  ),
+    .dout (dtcm_ram_dout_pre ),
+    .rst_n(rst_dtcm      ),
+    .clk  (clk_dtcm_ram  )
+    );
+
+| sd | Input | 1 | Power domain shutdown enable signal for power management |
+| ds | Input | 1 | Deep sleep mode enable, controlling complete power area shutdown |
+| ls | Input | 1 | Light sleep mode enable, reducing power without full shutdown |
+| cs | Input | 1 | Chip select signal, controlling RAM selection |
+| we | Input | 1 | Write enable signal, controlling write operation |
+| addr | Input | E203_DTCM_RAM_AW | Address input, specifying read/write location |
+| wem | Input | E203_DTCM_RAM_MW | Write mask, controlling specific byte writing |
+| din | Input | E203_DTCM_RAM_DW | Data input to be written |
+| rst_n | Input | 1 | Asynchronous reset signal (active low) |
+| clk | Input | 1 | System clock |
+| dout | Output | E203_DTCM_RAM_DW | Data output, read data |
