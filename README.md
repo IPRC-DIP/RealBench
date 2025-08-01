@@ -1,5 +1,8 @@
 # RealBench
-
+<p align="left">
+    <a href="https://arxiv.org/abs/2507.16200"><img src="https://img.shields.io/badge/arXiv-2507.16200-b31b1b.svg?style=for-the-badge">
+</p>
+       
 ## Overview
 
 RealBench is a benchmark for complex IP design tasks in real scenarios. It has the following features
@@ -112,3 +115,17 @@ Each JSONL (JSON Lines) file must contain entries with the following required fi
 ```
 
 For details, please refer to the `samples/codev-qwen-7b` folder in the repository.
+
+## Paper and BibTex
+
+Please cite the paper if you use RealBench.
+
+Paper: https://arxiv.org/abs/2507.16200
+```
+@article{jin2025realbench,
+  title={RealBench: Benchmarking Verilog Generation Models with Real-World IP Designs},
+  author={Jin, Pengwei and Huang, Di and Li, Chongxiao and Cheng, Shuyao and Zhao, Yang and Zheng, Xinyao and Zhu, Jiaguo and Xing, Shuyi and Dou, Bohan and Zhang, Rui and others},
+  journal={arXiv preprint arXiv:2507.16200},
+  year={2025}
+}
+```
