@@ -116,7 +116,7 @@ Each JSONL (JSON Lines) file must contain entries with the following required fi
 
 For details, please refer to the `samples/codev-qwen-7b` folder in the repository.
 
-## Paper and BibTex
+## Paper and BibTeX
 
 Please cite the paper if you use RealBench.
 
