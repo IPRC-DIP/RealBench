@@ -47,6 +47,19 @@ if __name__ == '__main__':
                     if not os.path.exists(md_file):
                         assert False,'module markdown file does not exist'
                     content = read_md_file(md_file)
+                    sdc_prompt = "\nSome global variables involved in the document come from the file sd_defines.v. If you need to use them, please include this file.\n"
+                    e203_prompt = "\nSome global variables involved in the document come from the file e203_defines.v. If you need to use them, please include this file.\n"
+                    e203_config_prompt = "\nSome global variables involved in the document come from the file config.v. If you need to use them, please include this file.\n"
+                    if "sdc" in system:
+                        with open(os.path.join(benchmark_path,"sdc/sd_defines/sd_defines.md"), 'r', encoding='utf-8') as f2:
+                            sdc_define = f2.read()
+                        content = content + sdc_prompt + sdc_define
+                    elif "e203_hbirdv2" in system:
+                        with open(os.path.join(benchmark_path,"e203_hbirdv2/e203_defines/e203_defines.md"), 'r', encoding='utf-8') as f2:
+                            e203_define = f2.read()
+                        with open(os.path.join(benchmark_path,"e203_hbirdv2/config/config.md"), 'r', encoding='utf-8') as f2:
+                            e203_config = f2.read()
+                        content = content + e203_prompt + e203_define + e203_config_prompt + e203_config
                     json_obj = {
                         "task": module,  
                         "problem": content.strip()
@@ -64,6 +77,19 @@ if __name__ == '__main__':
                 md_file = f"{os.path.join(path0,system)}/{system}.md"
                 content_list = []
                 content = read_md_file(md_file)
+                sdc_prompt = "\nSome global variables involved in the document come from the file sd_defines.v. If you need to use them, please include this file.\n"
+                e203_prompt = "\nSome global variables involved in the document come from the file e203_defines.v. If you need to use them, please include this file.\n"
+                e203_config_prompt = "\nSome global variables involved in the document come from the file config.v. If you need to use them, please include this file.\n"
+                if "sdc" in system:
+                    with open(os.path.join(benchmark_path,"sdc/sd_defines/sd_defines.md"), 'r', encoding='utf-8') as f2:
+                        sdc_define = f2.read()
+                    content = content + sdc_prompt + sdc_define
+                elif "e203_hbirdv2" in system:
+                    with open(os.path.join(benchmark_path,"e203_hbirdv2/e203_defines/e203_defines.md"), 'r', encoding='utf-8') as f2:
+                        e203_define = f2.read()
+                    with open(os.path.join(benchmark_path,"e203_hbirdv2/config/config.md"), 'r', encoding='utf-8') as f2:
+                        e203_config = f2.read()
+                    content = content + e203_prompt + e203_define + e203_config_prompt + e203_config
                 content_list.append(content)
                 for submodule in components:
                     path1 = os.path.join(path0,submodule)
