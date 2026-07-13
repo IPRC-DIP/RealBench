@@ -1,0 +1,23 @@
+# 运行时产物
+workdir/
+eval_output/
+*.traj.json
+*.traj.stderr
+.claude-trace/
+
+# 本地 Claude Code 设置（含可能的凭证）
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+
+# 临时测试目录
+tmp_curl_test/
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# zip 包
+*.zip

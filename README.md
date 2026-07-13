@@ -118,6 +118,41 @@ Each JSONL (JSON Lines) file must contain entries with the following required fi
 
 For details, please refer to the `samples/codev-qwen-7b` folder in the repository.
 
+## LLM + Claude Code Evaluation
+We provide a Docker-based workflow for evaluating LLM agents on RealBench. The runner invokes Claude Code on each
+  generated task, records trajectories with `claude-trace`, and evaluates the generated Verilog with the RealBench flow.
+
+### Build Docker Image
+```bash
+  cd llm/realbench_release
+  docker build -t claude-runner:latest .
+```
+### Run Evaluation
+Set the RealBench repository path and API credentials first:
+```
+  export REALBENCH_REPO=/path/to/RealBench
+  export ANTHROPIC_BASE_URL=<your_api_endpoint>
+  export ANTHROPIC_AUTH_TOKEN=<your_api_key>
+  export ANTHROPIC_MODEL=<your_model_name>
+```
+Run the full pipeline:
+```
+  bash run.sh
+```
+  The pipeline has four stages:
+```
+  bash run.sh 0      # create task directories from RealBench
+  bash run.sh 1      # run Claude Code in Docker
+  bash run.sh 2      # collect generated Verilog
+  bash run.sh 3      # evaluate and generate report
+```
+
+### Docker Isolation Against Prompt Injection and Host-Side Attacks
+The runner limits this risk by mounting only `workdir/<task>/` as `/workspace`, never mounting the RealBench
+repository with golden `.v` files, running as a non-root host UID/GID, disabling unnecessary tools such as
+  `WebSearch`, `WebFetch`, `curl`, and `wget`, and restricting outbound traffic to the configured API host when
+  `NETWORK_ALLOWLIST=1`.
+
 ## Paper and BibTeX
 
 Please cite the paper if you use RealBench.
